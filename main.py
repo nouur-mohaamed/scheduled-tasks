@@ -8,7 +8,7 @@ today_date=dt.today()
 to_email = "Salwa.maher@acg-eg.com"
 from_email = "nouurmohaamed6777@gmail.com"
 dotenv.load_dotenv()
-password =str(os.getenv("password"))
+password =str(os.getenv("PASSWORD"))
 with smtplib.SMTP("smtp.gmail.com",587) as connection:
     connection.starttls()
     connection.login(user=from_email,password=password)
